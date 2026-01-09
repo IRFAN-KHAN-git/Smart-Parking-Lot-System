@@ -139,10 +139,12 @@ function App() {
             Park/Remove
           </button>
         </div>
+
         {/* message */}
         {message && (
           <div className="bg-blue-100 text-blue-800 p-3 rounded">{message}</div>
         )}
+
         {/* content */}
         {activeTab === 'add' && <AddSlotForm addSlot={addSlot} />}
         {activeTab === 'view' && (
