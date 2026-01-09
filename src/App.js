@@ -75,12 +75,14 @@ function App() {
 
   return (
     <div className="min-h-screen p-6 ">
-      {/* heading */}
+    
+  {/* heading */}
       <div className="flex items-center justify-center gap-3 mb-2">
         <Car className="w-10 h-10 text-blue-400" />
         <h1 className="text-4xl font-bold">Smart Parking System</h1>
       </div>
-      {/* bars */}
+      
+    {/* bars */}
       <br />
       <div className="grid grid-cols-2 md:grid-cols-5 gap-4 m-2">
         <div className="bg-black/10 backdrop-blur-sm p-4 rounded-lg border border-black/20">
