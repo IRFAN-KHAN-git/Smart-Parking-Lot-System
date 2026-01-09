@@ -9,18 +9,18 @@ function App() {
   const [message, setMessage] = useState('');
   const [activeTab, setActiveTab] = useState('');
 
-  // Load slots from localStorage
+  // slots from localstorage
   useEffect(() => {
     const stored = localStorage.getItem('slots');
     if (stored) setSlots(JSON.parse(stored));
   }, []);
 
-  // Save slots to localStorage
+  //save slots to localstorage
   useEffect(() => {
     localStorage.setItem('slots', JSON.stringify(slots));
   }, [slots]);
 
-  // Add Slot
+  // add slot
   const addSlot = (slotNo, isCovered, isEVCharging) => {
     if (slots.some((s) => s.slotNo === slotNo)) {
       setMessage(`Slot ${slotNo} already exists`);
@@ -31,7 +31,7 @@ function App() {
     setMessage(`Slot ${slotNo} added successfully`);
   };
 
-  // Park Vehicle
+  // park 
   const parkVehicle = (needsEV, needsCover) => {
     const availableSlots = slots
       .filter((s) => !s.isOccupied)
@@ -49,7 +49,7 @@ function App() {
     setMessage(`Vehicle parked at slot ${availableSlots[0].slotNo}`);
   };
 
-  // Remove Vehicle
+  // remove
   const removeVehicle = (slotNo) => {
     const slot = slots.find((s) => s.slotNo === slotNo);
     if (!slot) {
