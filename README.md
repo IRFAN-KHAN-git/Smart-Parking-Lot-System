@@ -2,17 +2,8 @@
 
 A web-based **Smart Parking System** that allows users to **add parking slots, view all slots, park vehicles, and remove vehicles** automatically with a modern UI. The system supports **EV charging slots, covered slots, and real-time slot availability tracking**.
 
----
-
-## **Demo Video**
-📹 [2-Minute Demo Video Link](#)  
-*(Replace `#` with your actual demo video URL)*
-
----
-
 ## **Live Deployment**
-🌐 [Live App Link](#)  
-*(Replace `#` with your deployed URL on Vercel/Netlify/etc.)*
+🌐 [Live App Link](https://parking-lot-system.netlify.app/)  
 
 ---
 
